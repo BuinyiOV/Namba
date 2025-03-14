@@ -1,3 +1,5 @@
+$text-color-hover: #14850e;
+
 @keyframes burgerOpenUp {
 	0% {
 		transform: rotate(0deg) translate(0, 0);
@@ -75,5 +77,41 @@
 	100% {
 		transform: translateY(-100%);
 		opacity: 0;
+	}
+}
+@keyframes loader {
+	0% {
+		transform: scale(1);
+		filter: drop-shadow(0px 0px 50px rgba($text-color-hover, 0.2));
+	}
+
+	25% {
+		transform: scale(1.05);
+	}
+
+	50% {
+		transform: scale(1);
+		filter: drop-shadow(0px 0px 50px rgba($text-color-hover, 0.7));
+	}
+
+	75% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+		filter: drop-shadow(0px 0px 50px rgba($text-color-hover, 0.2));
+	}
+}
+
+@keyframes invisible {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.5);
 	}
 }

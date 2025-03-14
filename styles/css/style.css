@@ -101,6 +101,36 @@ section {
     opacity: 0;
   }
 }
+@keyframes loader {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 50px rgba(20, 133, 14, 0.2));
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 50px rgba(20, 133, 14, 0.7));
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 50px rgba(20, 133, 14, 0.2));
+  }
+}
+@keyframes invisible {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
 @font-face {
   font-family: "Copperplate Gothic Light";
   src: url("/fonts/copperplate.ttf") format("truetype");
@@ -118,6 +148,28 @@ body {
   background-attachment: fixed;
   color: #e1e1e1;
   padding-bottom: 100px;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.preloader img {
+  width: 60vw;
+  animation: loader 3s forwards infinite;
+}
+
+.hidden-preloader {
+  animation: invisible 2s forwards;
 }
 
 header {
@@ -306,6 +358,9 @@ header {
 
 .contakt_item {
   width: 60px;
+  background-color: #000000;
+  border-radius: 50px;
+  overflow: visible;
   transition: 0.3s ease;
 }
 
@@ -515,6 +570,9 @@ header {
   }
 }
 @media screen and (max-width: 800px) {
+  .preloader img {
+    width: 80vw;
+  }
   #cart-container {
     width: 95%;
   }
@@ -601,7 +659,8 @@ header {
     font-size: 14px;
   }
 }
-.burger {
+.burger,
+.menu_btn {
   display: none;
   background-color: #000000;
   border-radius: 5px;
@@ -672,6 +731,28 @@ header {
     right: 20px;
     top: 15px;
     z-index: 1000;
+  }
+  .menu_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #14850e;
+    font-size: 24px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 15vh 0;
+    cursor: default;
+    border: 3px solid rgba(0, 0, 0, 0);
+    box-shadow: inset 0px 0px 3px #14850e;
+    transition: 0.3s ease;
+  }
+  .menu_btn:hover {
+    border: 3px solid #14850e;
+  }
+  .menu_btn {
+    display: block;
   }
   /* Анімація для бургеру при відкритті */
   .burger.active-menu div:nth-child(1) {
@@ -749,6 +830,25 @@ header {
     top: 0;
     transform: translate(50%, 50%);
     z-index: 1000;
+  }
+  .menu_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #14850e;
+    font-size: 24px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 15vh 0;
+    cursor: default;
+    border: 3px solid rgba(0, 0, 0, 0);
+    box-shadow: inset 0px 0px 3px #14850e;
+    transition: 0.3s ease;
+  }
+  .menu_btn:hover {
+    border: 3px solid #14850e;
   }
   /* Анімація для бургеру при відкритті */
   .burger.active-menu div:nth-child(1) {

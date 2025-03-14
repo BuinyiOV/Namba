@@ -3,6 +3,7 @@
 export const mainPageText = {
 	pl: {
 		title: 'Sushi Namba',
+		menuTitle: 'Menu',
 		greatings: 'Witamy w restauracji Namba — prawdziwym raju dla miłośników sushi rollów! W naszym lokalu możesz cieszyć się unikalnymi smakami i aromatami japońskiej kuchni, skupiając się na jednym z ulubionych przysmaków — sushi rollach.',
 		menu: 'Nasze menu oferuje szeroki wybór sushi rollów, przygotowanych z najświeższych składników. Każda rolka jest tworzona z miłością i zgodnie z tradycyjnymi japońskimi przepisami, a także z autorskimi dodatkami, które zachwycą Twoje kubki smakowe.',
 		featuresTitle: 'Cechy naszej restauracji:',
@@ -39,6 +40,7 @@ export const mainPageText = {
 	},
 	ua: {
 		title: 'Суші Namba',
+		menuTitle: 'Меню',
 		greatings: 'Ласкаво просимо до ресторану Namba — справжнього раю для любителів суші ролів! У нашому закладі ви зможете насолодитися унікальними смаками та ароматами японської кухні, зосередженими на одному з найулюбленіших делікатесів — суші ролах.',
 		menu: 'Наше меню пропонує широкий вибір суші ролів, приготованих з найсвіжіших інгредієнтів. Кожен рол створюється з любов’ю та дотриманням традиційних японських рецептів, а також з авторськими доповненнями, які вразять ваші смакові рецептори.',
 		featuresTitle: 'Особливості нашого ресторану:',

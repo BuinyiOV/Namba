@@ -44,6 +44,7 @@ function goToMain() {
 	setTimeout(() => {
 		contentDetails.innerHTML = `
 			<h2 class="green_text">${pageContent.title}</h2>
+			<div class="menu_btn">${pageContent.menuTitle}</div>
 			<p>${pageContent.greatings}</p>
 			<p>${pageContent.menu}</p>
 			<h2 class="green_text">${pageContent.featuresTitle}</h2>
@@ -81,6 +82,7 @@ function goToMain() {
 
 document.addEventListener("DOMContentLoaded", function () {
 	const burger = document.querySelector(".burger");
+	const menuBtn = document.querySelector(".menu_btn");
 	const navLinks = document.querySelector(".nav-links");
 	const links = document.querySelectorAll(".nav-links a");
 
@@ -90,6 +92,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	burger.addEventListener("click", toggleMenu);
+
+	contentDetails.addEventListener("click", function (event) {
+		if (event.target.classList.contains("menu_btn")) {
+			toggleMenu();
+		}
+	});
 
 	links.forEach(link => {
 		link.addEventListener("click", function () {
@@ -513,6 +521,16 @@ closeButton.addEventListener('click', () => {
 		cartContainer.style.display = 'none';
 		backdrop.style.display = 'none';
 	}, 300); // Час закінчення анімації
+});
+
+// preloder
+
+window.addEventListener("load", function () {
+	document.getElementById("preloader").classList.add("hidden-preloader");
+
+	setTimeout(function () {
+		preloader.style.display = 'none';  // Приховуємо прелоадер
+	}, 2000); // Час очікування має відповідати часу анімації
 });
 
 
