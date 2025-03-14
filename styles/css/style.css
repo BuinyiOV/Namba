@@ -108,7 +108,7 @@ section {
   font-style: normal;
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/bgNoText.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/bgNoText.png");
   background-size: cover;
   /* Розтягнути зображення по всій площі */
   background-position: center;
