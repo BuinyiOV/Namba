@@ -1,0 +1,773 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+i,
+ol,
+ul,
+li,
+form,
+label,
+table,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+  list-style: none;
+}
+
+@keyframes burgerOpenUp {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 10px);
+  }
+  100% {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+@keyframes burgerCloseUp {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 10px);
+  }
+  100% {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+@keyframes burgerOpenDown {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, -10px);
+  }
+  100% {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+}
+@keyframes burgerCloseDown {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, -10px);
+  }
+  100% {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: "Copperplate Gothic Light";
+  src: url("/fonts/copperplate.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/bgNoText.png");
+  background-size: cover;
+  /* Розтягнути зображення по всій площі */
+  background-position: center;
+  /* Центрувати зображення */
+  background-repeat: no-repeat;
+  /* Заборонити повторення */
+  background-attachment: fixed;
+  color: #e1e1e1;
+  padding-bottom: 100px;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.7294117647);
+  color: #e1e1e1;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+}
+
+.green_text {
+  color: #14850e;
+}
+
+.center_text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-width: 150px;
+  min-width: 100px;
+  height: auto;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #e1e1e1;
+  text-decoration: none;
+  font-size: 16;
+  font-family: "Copperplate Gothic Light", "Philosopher", sans-serif;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #14850e;
+}
+
+/* Мовний перемикач всередині навігаційної панелі */
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.lang-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgba(205, 26, 26, 0);
+  border: 2px solid rgba(205, 26, 26, 0);
+  font-weight: bold;
+  color: #e1e1e1;
+  transition: 0.3s ease;
+}
+
+.lang-btn:hover {
+  background-color: #000000;
+  border: 2px solid #14850e;
+}
+
+/* Стилі для головної секції */
+.hero-section {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+
+.hero-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.5em;
+  color: #666;
+}
+
+.lang-btn.active {
+  background-color: #000000;
+  border: 2px solid #14850e;
+  border-radius: 4px;
+  color: #e1e1e1;
+  box-shadow: 0 5px 15px #000000;
+}
+
+.roll-img {
+  width: 30vw;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  opacity: 0;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+.nav-link.active.anima {
+  color: #14850e;
+  box-shadow: 0 5px 15px #000000, inset 0 -5px 5px -1px #000000;
+  transition: 0.5s ease-in-out;
+}
+
+.content-section {
+  padding-top: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#content-details h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 80px 0 100px;
+  font-family: "Copperplate Gothic Light", "Philosopher", sans-serif;
+}
+#content-details p {
+  text-align: center;
+  margin: 30px 0 50px;
+  line-height: 30px;
+}
+#content-details ul {
+  padding-bottom: 40px;
+}
+#content-details li {
+  cursor: default;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 3px #14850e;
+  transition: 0.3s ease;
+  padding: 15px 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+#content-details li span {
+  transition: 0.3s ease;
+}
+#content-details li:hover {
+  border: 3px solid #14850e;
+}
+#content-details li:hover span {
+  color: #14850e;
+}
+
+.contakts_box {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.contakts_box div {
+  flex-basis: 30%;
+  margin: 5px;
+}
+.contakts_box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #14850e;
+}
+.contakts_box p {
+  transition: 0.3s ease;
+}
+.contakts_box p:hover {
+  filter: drop-shadow(0px 0px 15px #14850e);
+  transform: scale(1.1);
+}
+
+.contakt_item {
+  width: 60px;
+  transition: 0.3s ease;
+}
+
+.contakt_item:hover {
+  filter: drop-shadow(0px 0px 15px #14850e);
+  transform: scale(1.1);
+}
+
+.map {
+  padding-top: 40px;
+  display: block;
+  width: 60%;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.roll_num {
+  white-space: nowrap;
+}
+
+.roll_num,
+.roll_text {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.roll_btn {
+  padding: 10px 10px 0;
+}
+
+.decrease-quantity,
+.increase-quantity,
+.add-to-cart,
+.remove-from-cart,
+.decrease-cart,
+.increase-cart,
+#clear-cart {
+  min-height: 25px;
+  min-width: 25px;
+  font-size: 14px;
+  color: #e1e1e1;
+  background: none;
+  border: 2px solid #14850e;
+  border-radius: 3px;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+.decrease-quantity:hover,
+.increase-quantity:hover,
+.add-to-cart:hover,
+.remove-from-cart:hover,
+.decrease-cart:hover,
+.increase-cart:hover,
+#clear-cart:hover {
+  background: #14850e;
+}
+
+.decrease-quantity:active,
+.increase-quantity:active,
+.add-to-cart:active,
+.remove-from-cart:active,
+.decrease-cart:active,
+.increase-cart:active,
+#clear-cart:active {
+  transform: scale(0.9);
+}
+
+.cart-quantity {
+  margin: 5px;
+  width: 40px;
+}
+
+.visible {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#cart-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border: 3px solid #14850e;
+  border-radius: 5px;
+  padding-top: 15px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#cart-container::-webkit-scrollbar {
+  width: 8px;
+  /* Товщина скролу */
+}
+
+#cart-container::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  /* Колір фону скролу */
+  border-radius: 5px;
+}
+
+#cart-container::-webkit-scrollbar-thumb {
+  background: #14850e;
+  /* Колір самого скролу */
+  border-radius: 5px;
+}
+
+#cart-container::-webkit-scrollbar-thumb:hover {
+  background: #14850e;
+  /* Колір при наведенні */
+}
+
+/* Стилі для Firefox */
+#cart-container {
+  scrollbar-width: thin;
+  /* "thin" (тонкий), "auto" (звичайний) */
+  scrollbar-color: #14850e #1a1a1a;
+  /* thumb (повзунок) + track (фон) */
+}
+
+.cart-items {
+  line-height: 26px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-info {
+  padding: 0 10px;
+}
+
+.cart-sum {
+  padding: 20px 10px;
+  border-top: 3px solid #14850e;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cart-quantity {
+  text-align: center;
+}
+
+.remove-from-cart {
+  margin-left: 5px;
+}
+
+#toggle-cart {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-image: url("/img/basket.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.phone_absolut {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-section {
+    padding-top: 150px;
+    width: 80%;
+  }
+  #cart-container {
+    min-width: 60%;
+  }
+  .cart-info {
+    text-align: center;
+  }
+  .cart-items {
+    line-height: 26px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-info {
+    padding: 0 10px;
+  }
+  .cart-sum {
+    padding: 20px 10px;
+    border-top: 3px solid #14850e;
+  }
+  .cart-btn {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 800px) {
+  #cart-container {
+    width: 95%;
+  }
+  .roll-img {
+    width: 60vw;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+  }
+  .map {
+    padding-top: 40px;
+    display: block;
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+  }
+  .roll_num {
+    white-space: nowrap;
+  }
+  .roll_num,
+  .roll_text {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .roll_btn {
+    text-align: center;
+    padding: 10px 10px 0;
+  }
+  .content-section {
+    width: 95%;
+  }
+  #content-details h2 {
+    font-size: 26px;
+    text-align: center;
+    margin: 80px 0 100px;
+    font-family: "Copperplate Gothic Light", "Philosopher", sans-serif;
+  }
+  #content-details p {
+    text-align: center;
+    margin: 30px 0 50px;
+    line-height: 30px;
+  }
+  #content-details ul {
+    padding-bottom: 40px;
+  }
+  #content-details li {
+    cursor: default;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 3px #14850e;
+    transition: 0.3s ease;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #content-details li span {
+    transition: 0.3s ease;
+  }
+  #content-details li:hover {
+    border: 3px solid #14850e;
+  }
+  #content-details li:hover span {
+    color: #14850e;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contakt_item {
+    width: 40px;
+    transition: 0.3s ease;
+  }
+  #toggle-cart {
+    width: 40px;
+    height: 40px;
+  }
+  .contakts_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .roll_num,
+  .roll_text {
+    font-size: 14px;
+  }
+}
+.burger {
+  display: none;
+  background-color: #000000;
+  box-shadow: 0 0 15px 15px #000000;
+}
+
+.burger div {
+  width: 30px;
+  height: 4px;
+  background: white;
+  margin: 5px;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 399.98px) {
+  header {
+    box-shadow: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+  }
+  .logo img {
+    height: 66px;
+  }
+  .language-switcher {
+    flex-direction: column;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 999;
+    padding: 50px;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .nav-links li {
+    text-align: center;
+  }
+  .nav-links.active-menu {
+    transform: translateY(0);
+    opacity: 1;
+    animation: slideIn 0.5s forwards;
+    /* Анімація при відкритті меню */
+  }
+  .nav-links:not(.active-menu) {
+    animation: slideOut 0.5s forwards;
+    /* Анімація при закритті меню */
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    z-index: 1000;
+  }
+  /* Анімація для бургеру при відкритті */
+  .burger.active-menu div:nth-child(1) {
+    animation: burgerOpenUp 0.5s forwards;
+  }
+  .burger.active-menu div:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active-menu div:nth-child(3) {
+    animation: burgerOpenDown 0.5s forwards;
+  }
+  /* Анімація для бургеру при закритті */
+  .burger:not(.active-menu) div:nth-child(1) {
+    animation: burgerCloseUp 0.5s forwards reverse;
+  }
+  .burger:not(.active-menu) div:nth-child(2) {
+    transition: opacity 0.7s ease-in-out;
+    opacity: 1;
+  }
+  .burger:not(.active-menu) div:nth-child(3) {
+    animation: burgerCloseDown 0.5s forwards reverse;
+  }
+}
+@media (min-width: 400px) and (max-width: 1200px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .logo img {
+    height: 66px;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 999;
+    padding: 100px 50px;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .nav-links li {
+    text-align: center;
+  }
+  .nav-links.active-menu {
+    transform: translateY(0);
+    opacity: 1;
+    animation: slideIn 0.5s forwards;
+    /* Анімація при відкритті меню */
+  }
+  .nav-links:not(.active-menu) {
+    animation: slideOut 0.5s forwards;
+    /* Анімація при закритті меню */
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    right: 50%;
+    top: 0;
+    transform: translate(50%, 50%);
+    z-index: 1000;
+  }
+  /* Анімація для бургеру при відкритті */
+  .burger.active-menu div:nth-child(1) {
+    animation: burgerOpenUp 0.5s forwards;
+  }
+  .burger.active-menu div:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active-menu div:nth-child(3) {
+    animation: burgerOpenDown 0.5s forwards;
+  }
+  /* Анімація для бургеру при закритті */
+  .burger:not(.active-menu) div:nth-child(1) {
+    animation: burgerCloseUp 0.5s forwards reverse;
+  }
+  .burger:not(.active-menu) div:nth-child(2) {
+    transition: opacity 0.7s ease-in-out;
+    opacity: 1;
+  }
+  .burger:not(.active-menu) div:nth-child(3) {
+    animation: burgerCloseDown 0.5s forwards reverse;
+  }
+}
