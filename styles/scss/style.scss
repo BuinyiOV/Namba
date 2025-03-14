@@ -558,13 +558,13 @@ header {
 .burger {
 	display: none;
 	background-color: $background-color-accent;
-	box-shadow: 0 0 15px 15px $background-color-accent,
+	border-radius: 5px;
 }
 
 .burger div {
 	width: 30px;
 	height: 4px;
-	background: white;
+	background: $text-color-hover;
 	margin: 5px;
 	border-radius: 2px;
 	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;

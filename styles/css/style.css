@@ -604,13 +604,13 @@ header {
 .burger {
   display: none;
   background-color: #000000;
-  box-shadow: 0 0 15px 15px #000000;
+  border-radius: 5px;
 }
 
 .burger div {
   width: 30px;
   height: 4px;
-  background: white;
+  background: #14850e;
   margin: 5px;
   border-radius: 2px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
