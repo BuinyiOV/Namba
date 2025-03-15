@@ -43,7 +43,7 @@ function goToMain() {
 
 	setTimeout(() => {
 		contentDetails.innerHTML = `
-			<h2 class="green_text">${pageContent.title}</h2>
+			<h1 class="green_text">${pageContent.title}</h1>
 			<div class="menu_btn">${pageContent.menuTitle}</div>
 			<p>${pageContent.greatings}</p>
 			<p>${pageContent.menu}</p>
