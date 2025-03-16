@@ -704,6 +704,9 @@ header {
   .lang-btn {
     font-size: 10px;
   }
+  .lang-btn.active {
+    box-shadow: none;
+  }
   .nav-links {
     position: fixed;
     top: 0;
@@ -719,9 +722,11 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: start;
+    font-size: 24px;
   }
   .nav-links li {
     text-align: center;
+    padding: 10px 0;
   }
   .nav-links.active-menu {
     transform: translateY(0);
@@ -802,6 +807,9 @@ header {
   .logo img {
     height: 66px;
   }
+  .lang-btn.active {
+    box-shadow: none;
+  }
   .nav-links {
     position: fixed;
     top: 0;
@@ -817,9 +825,11 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: start;
+    font-size: 28px;
   }
   .nav-links li {
     text-align: center;
+    padding: 10px 0;
   }
   .nav-links.active-menu {
     transform: translateY(0);
