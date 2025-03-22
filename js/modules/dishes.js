@@ -66,7 +66,7 @@ export const dishes = {
 		futomaki: {
 			title: "Futomaki (6 szt)",
 			description: "Grube rolki z minimum czterema składnikami. Algi Nori są owinięte od zewnątrz.",
-			imageUrl: 'img/Photo/F2.png',
+			imageUrl: 'img/Photo/F.png',
 			items: [
 				{ rollNumber: "Roll 13", rollName: "Wege", rollPrice: "30", plateColor: "Red", rollIngredients: "Ogórek, awokado, oshinko, kampyo, grzyby shitake, sałatka, ser" },
 				{ rollNumber: "Roll 14", rollName: "Warzywa w tempurze", rollPrice: "35", plateColor: "Orange", rollIngredients: "Kilka rodzajów warzyw smażonych w tempurze" },
@@ -185,7 +185,7 @@ export const dishes = {
 		uramak_caterpillar: {
 			title: "Uramak \"Caterpillar\" (8 szt)",
 			description: "Nadzienie jest umieszczone wewnątrz, a zewnętrzną warstwę stanowi ryż. Wierzch pokryty awokado lub mango.",
-			imageUrl: 'img/Photo/Cat2.png',
+			imageUrl: 'img/Photo/Cat.png',
 			items: [
 				{ rollNumber: "Roll 79", rollName: "Łosoś z awokado", rollPrice: "40", plateColor: "Yellow", rollIngredients: "Łosoś, awokado, ogórek, ser" },
 				{ rollNumber: "Roll 80", rollName: "Łosoś z mango", rollPrice: "40", plateColor: "Yellow", rollIngredients: "Łosoś mango, kampyo, ser" },
@@ -229,7 +229,7 @@ export const dishes = {
 		datemaki: {
 			title: "Datemaki (6 szt)",
 			description: "Rolki zawijane zamiast w nori w słodki omlet jajeczny.",
-			imageUrl: 'img/Photo/D2.png',
+			imageUrl: 'img/Photo/D.png',
 			items: [
 				{ rollNumber: "Roll 106", rollName: "Surimi", rollPrice: "40", plateColor: "Red", rollIngredients: "Surimi, ogórek, oshinko, ser" },
 				{ rollNumber: "Roll 107", rollName: "Sałatka Krabowa", rollPrice: "40", plateColor: "Red", rollIngredients: "Sałatka Krabowa, ser" },
@@ -243,7 +243,7 @@ export const dishes = {
 		sashimi_roll: {
 			title: "Sashimi roll (8 szt)",
 			description: "Nadzienie zawinięte w papier ryżowy. Bez ryżu.",
-			imageUrl: 'img/Photo/SR2.png',
+			imageUrl: 'img/Photo/SR.png',
 			items: [
 				{ rollNumber: "Roll 113", rollName: "Wege", rollPrice: "30", plateColor: "Green", rollIngredients: "Goma Wakame, ogórek, awokado, oshinko, kampyo, grzyby shitake, sałatka, ser" },
 				{ rollNumber: "Roll 114", rollName: "Łosoś", rollPrice: "50", plateColor: "Red", rollIngredients: "Łosoś, ogórek, awokado, oshinko, kampyo, sałatka, ser" },
@@ -335,7 +335,7 @@ export const dishes = {
 		futomaki: {
 			title: "Futomaki (6 шт)",
 			description: "Грубі роли з мінімум чотирма інгредієнтами. Водорості Норі обгорнуті зовні.",
-			imageUrl: 'img/Photo/F2.png',
+			imageUrl: 'img/Photo/F.png',
 			items: [
 				{ rollNumber: "Roll 13", rollName: "Веге", rollPrice: "30", plateColor: "Red", rollIngredients: "Огірок, авокадо, ошінко, кампьо, гриби шітаке, салат, сир" },
 				{ rollNumber: "Roll 14", rollName: "Овочі в темпурі", rollPrice: "35", plateColor: "Orange", rollIngredients: "Кілька видів овочів, смажених у темпурі" },
@@ -454,7 +454,7 @@ export const dishes = {
 		uramak_caterpillar: {
 			title: "Uramak \"Caterpillar\" (8 шт)",
 			description: "Начинка розміщена всередині, а зовнішній шар складається з рису. Верх покритий авокадо або манго.",
-			imageUrl: 'img/Photo/Cat2.png',
+			imageUrl: 'img/Photo/Cat.png',
 			items: [
 				{ rollNumber: "Roll 79", rollName: "Лосось з авокадо", rollPrice: "40", plateColor: "Yellow", rollIngredients: "Лосось, авокадо, огірок, сир" },
 				{ rollNumber: "Roll 80", rollName: "Лосось з манго", rollPrice: "40", plateColor: "Yellow", rollIngredients: "Лосось, манго, кампйо, сир" },
@@ -498,7 +498,7 @@ export const dishes = {
 		datemaki: {
 			title: "Datemaki (6 шт)",
 			description: "Роли загорнуті не в норі, а в солодкий яєчний омлет.",
-			imageUrl: 'img/Photo/D2.png',
+			imageUrl: 'img/Photo/D.png',
 			items: [
 				{ rollNumber: "Roll 106", rollName: "Сурімі", rollPrice: "40", plateColor: "Red", rollIngredients: "Сурімі, огірок, ошінко, сир" },
 				{ rollNumber: "Roll 107", rollName: "Крабовий салат", rollPrice: "40", plateColor: "Red", rollIngredients: "Крабовий салат, сир" },
@@ -512,7 +512,7 @@ export const dishes = {
 		sashimi_roll: {
 			title: "Sashimi roll (8 шт)",
 			description: "Начинка загорнута в рисовий папір. Без рису.",
-			imageUrl: 'img/Photo/SR2.png',
+			imageUrl: 'img/Photo/SR.png',
 			items: [
 				{ rollNumber: "Roll 113", rollName: "Вегетаріанський", rollPrice: "30", plateColor: "Green", rollIngredients: "Goma Wakame, огірок, авокадо, ошінко, кампйо, гриби шітаке, салат, сир" },
 				{ rollNumber: "Roll 114", rollName: "Лосось", rollPrice: "50", plateColor: "Red", rollIngredients: "Лосось, огірок, авокадо, ошінко, кампйо, салат, сир" },
