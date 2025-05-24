@@ -168,8 +168,10 @@ header {
 }
 
 .roll-img {
-	width: 30vw; 
+	text-align: center;
+	max-width: 30vw; 
 	height: auto;
+	max-height: 50vh;
 	display: block;
 	margin: 30px auto;
 	opacity: 0;
@@ -188,7 +190,6 @@ header {
 }
 
 .content-section{
-	padding-top: 50px;
 	width: 60%;
 	margin: 0 auto;
 }
@@ -226,6 +227,8 @@ header {
 		transition: 0.3s ease;
 		padding: 15px 10px;
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		margin-bottom: 20px;
 	}
 	li:hover{
@@ -283,11 +286,13 @@ header {
 
 .roll_num,
 .roll_text{
+	text-align: center;
 	font-size: 20px;
 	padding: 10px;
 }
 
 .roll_btn {
+	text-align: center;
 	padding: 10px 10px 0;
 }
 
@@ -439,10 +444,64 @@ header {
 	left: 30px;
 }
 
+//add
+
+.ad-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	min-height: 90px;
+	background-color: $background-color-accent;
+	border: 1px solid $text-color-hover;
+	border-radius: 12px;
+	padding: 20px;
+	margin: 20px auto 100px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	transition: opacity 0.3s;
+}
+
+.ad-box:hover {
+	cursor: pointer;
+}
+
+#ad-text {
+	display: inline-block;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+	text-align: center;
+	font-size: 16px;
+	color: $text-color-hover;
+}
+
+.close-btn {
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	color: #555;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.close-btn:hover {
+	color: #ff0000;
+}
+
 //----------------------------------------------------------------------------------------------
 //Адаптив крім меню
 
 @media screen and (max-width: 1200px) {
+
+	.roll-img {
+			max-width: 80vw;
+		}
+		
 	.content-section {
 		padding-top: 150px;
 		width: 80%;
@@ -499,13 +558,6 @@ header {
 		transition: 0.3s ease;
 	}
 
-	.roll-img {
-			width: 60vw;
-			height: auto;
-			display: block;
-			margin: 30px auto;
-		}
-
 	.map {
 			padding-top: 40px;
 			display: block;
@@ -521,13 +573,11 @@ header {
 	
 		.roll_num,
 		.roll_text {
-			text-align: center;
 			font-size: 18px;
 			padding: 10px;
 		}
 	
 		.roll_btn {
-			text-align: center;
 			padding: 10px 10px 0;
 		}
 
@@ -564,9 +614,6 @@ header {
 				box-shadow: inset 0px 0px 3px $text-color-hover;
 				transition: 0.3s ease;
 				padding: 15px 10px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
 				margin-bottom: 20px;
 			}
 	
@@ -577,6 +624,10 @@ header {
 	
 				border: 3px solid $text-color-hover;
 			}
+		}
+
+		.ad-box {
+			min-height: 120px;
 		}
 }
 
@@ -590,6 +641,17 @@ header {
 		.roll_num,
 		.roll_text {
 			font-size: 14px;
+		}
+
+		.close-btn {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			font-size: 30px;
+		}
+
+		.ad-box {
+			min-height: 150px;
 		}
 	}
 

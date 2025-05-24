@@ -7,40 +7,40 @@ export const dishes = {
 			imageUrl: 'logo/logofinal.png',
 			items: [
 				{
-					setNumber: "Set 1", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "88", setQty: "22 szt", setRolls: ["Futomak Łosoś", "California Surimi", "Hosomak Oshinko"]
+					setNumber: "Set 1", setName: " ", imageUrl: 'img/Photo/Sets/Set1.png', setPrice: "88", setQty: "22 szt", setRolls: ["Futomak Łosoś", "California Surimi", "Hosomak Oshinko"]
 				},
 				{
-					setNumber: "Set 2", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "125", setQty: "32 szt", setRolls: ["California Krewetka w tempurze", "Caterpillar Łosoś z awokado", "Volcano Surimi Goma Wakame", "Hosomak Kampyo"]
+					setNumber: "Set 2", setName: " ", imageUrl: 'img/Photo/Sets/Set2B.png', setPrice: "125", setQty: "32 szt", setRolls: ["California Krewetka w tempurze", "Caterpillar Łosoś z awokado", "Volcano Surimi Goma Wakame", "Hosomak Kampyo"]
 				},
 				{
-					setNumber: "Set 3", setName: "Wege", imageUrl: 'logo/logofinal.png', setPrice: "145", setQty: "36 szt", setRolls: ["Futomak Wege", "Uramak \"Max\" Wege", "Volcano Awokado Goma Wakame", "Sashimi roll Wege", "Hosomak Awokado"]
+					setNumber: "Set 3", setName: "Wege", imageUrl: 'img/Photo/Sets/Set3.png', setPrice: "145", setQty: "36 szt", setRolls: ["Futomak Wege", "Uramak \"Max\" Wege", "Volcano Awokado Goma Wakame", "Sashimi roll Wege", "Hosomak Awokado"]
 				},
 				{
-					setNumber: "Set 4", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "160", setQty: "24 szt", setRolls: ["Datemak Grillowany łosoś na słodko", "Datemak Grillowany łosoś na ostro", "Uramak \"Max\" Pasta z tuńczyka", "Uramak \"Max\" Surimi"]
+					setNumber: "Set 4", setName: " ", imageUrl: 'img/Photo/Sets/Set4B.png', setPrice: "160", setQty: "24 szt", setRolls: ["Datemak Grillowany łosoś na słodko", "Datemak Grillowany łosoś na ostro", "Uramak \"Max\" Pasta z tuńczyka", "Uramak \"Max\" Surimi"]
 				},
 				{
-					setNumber: "Set 5", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "170", setQty: "32 szt", setRolls: ["Philadelphia Awokado z łososiem", "Philadelphia Ogórek z wędzonym łososiem", "Philadelphia Grill Gruszka z łososiem", "Philadelphia Cheese Krewetka w tempurze"]
+					setNumber: "Set 5", setName: " ", imageUrl: 'img/Photo/Sets/Set5B.png', setPrice: "170", setQty: "32 szt", setRolls: ["Philadelphia Awokado z łososiem", "Philadelphia Ogórek z wędzonym łososiem", "Philadelphia Grill Gruszka z łososiem", "Philadelphia Cheese Krewetka w tempurze"]
 				},
 				{
-					setNumber: "Set 6", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "170", setQty: "32 szt", setRolls: ["Caterpillar Krewetka w tempurze z awokado", "Caterpillar Krewetka w tempurze z mango", "Philadelphia Grill Ogórek z łososiem", "Philadelphia Cheese Łosoś wędzony"]
+					setNumber: "Set 6", setName: " ", imageUrl: 'img/Photo/Sets/Set6B.png', setPrice: "170", setQty: "32 szt", setRolls: ["Caterpillar Krewetka w tempurze z awokado", "Caterpillar Krewetka w tempurze z mango", "Philadelphia Grill Ogórek z łososiem", "Philadelphia Cheese Łosoś wędzony"]
 				},
 				{
 					setNumber: "Set 7", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "190", setQty: "36 szt", setRolls: ["Uramak \"Max\" Łosoś", "Volcano Tuńczyk Goma Wakame", "Caterpillar Krewetka w tempurze z awokado", "Datemak Sałatka Krabowa", "Hosomak Ogórek"]
 				},
 				{
-					setNumber: "Set 8", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "200", setQty: "52 szt", setRolls: ["Philadelphia Cheese Surimi", "Futomak Surimi", "Uramak \"Max\" Surimi", "California Surimi", "Volcano Surimi Goma Wakame", "Hosomak Ogórek", "Hosomak Kampyo"]
+					setNumber: "Set 8", setName: " ", imageUrl: 'img/Photo/Sets/Set8B.png', setPrice: "200", setQty: "52 szt", setRolls: ["Philadelphia Cheese Surimi", "Futomak Surimi", "Uramak \"Max\" Surimi", "California Surimi", "Volcano Surimi Goma Wakame", "Hosomak Ogórek", "Hosomak Kampyo"]
 				},
 				{
-					setNumber: "Set 9", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "210", setQty: "40 szt", setRolls: ["Caterpillar Łosoś z awokado", "Caterpillar Krewetka w tempurze z mango", "Philadelphia Ogórek z łososiem", "California Grillowany łosoś na ostro", "Volcano Krewetka w tempurze tatar z łososia"]
+					setNumber: "Set 9", setName: " ", imageUrl: 'img/Photo/Sets/Set9B.png', setPrice: "210", setQty: "40 szt", setRolls: ["Caterpillar Łosoś z awokado", "Caterpillar Krewetka w tempurze z mango", "Philadelphia Ogórek z łososiem", "California Grillowany łosoś na ostro", "Volcano Krewetka w tempurze tatar z łososia"]
 				},
 				{
-					setNumber: "Set 10", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "220", setQty: "40 szt", setRolls: ["Futomak w tempurze Tatar z łososia", "Futomak Pasta z tuńczyka", "Datemak Grillowany łosoś na słodko", "Uramak \"Max\" Surimi", "Philadelphia Cheese Łosoś", "Hosomak shitake"]
+					setNumber: "Set 10", setName: " ", imageUrl: 'img/Photo/Sets/Set10B.png', setPrice: "220", setQty: "40 szt", setRolls: ["Futomak w tempurze Tatar z łososia", "Futomak Pasta z tuńczyka", "Datemak Grillowany łosoś na słodko", "Uramak \"Max\" Surimi", "Philadelphia Cheese Łosoś", "Hosomak shitake"]
 				},
 				{
-					setNumber: "Set 11", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "310", setQty: "60 szt", setRolls: ["Philadelphia Cheese Łosoś w tempurze", "Philadelphia Ogórek z łososiem", "Caterpillar Łosoś z mango", "Caterpillar Tuńczyk z awokado", "California Surimi", "Volcano Łosoś tobiko", "Futomak Warzywa w tempurze", "Futomak Surimi"]
+					setNumber: "Set 11", setName: " ", imageUrl: 'img/Photo/Sets/Set11.png', setPrice: "310", setQty: "60 szt", setRolls: ["Philadelphia Cheese Łosoś w tempurze", "Philadelphia Ogórek z łososiem", "Caterpillar Łosoś z mango", "Caterpillar Tuńczyk z awokado", "California Surimi", "Volcano Łosoś tobiko", "Futomak Warzywa w tempurze", "Futomak Surimi"]
 				},
 				{
-					setNumber: "Set 12", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "365", setQty: "58 szt", setRolls: ["Futomak Tuńczyk \"Hashi\"", "Futomak Krewetka na maśle czosnkowym", "Uramak \"Max\" Pasta z tuńczyka", "Philadelphia Ogórek z tuńczykiem", "Volcano Łosoś tobiko", "Sashimi roll Umami", "Hosomak Tuńczyk", "Hosomak Awokado"]
+					setNumber: "Set 12", setName: " ", imageUrl: 'img/Photo/Sets/Set12B.png', setPrice: "365", setQty: "58 szt", setRolls: ["Futomak Tuńczyk \"Hashi\"", "Futomak Krewetka na maśle czosnkowym", "Uramak \"Max\" Pasta z tuńczyka", "Philadelphia Ogórek z tuńczykiem", "Volcano Łosoś tobiko", "Sashimi roll Umami", "Hosomak Tuńczyk", "Hosomak Awokado"]
 				}
 			]
 		},
@@ -260,6 +260,10 @@ export const dishes = {
 				{ rollName: "Sałatka Goma Wakame", plateColor: "White", rollPrice: "18" },
 				{ rollName: "Chipsy krewetkowe (15 szt)", plateColor: "White", rollPrice: "18" },
 				{ rollName: "Onigiri (8 szt)", plateColor: "White", rollPrice: "18", description: "kuleczki ryżu obtoczone w sezamie (8szt)" },
+				{ rollName: "Edamaki (5 szt)", plateColor: "Grey", rollPrice: "20" },
+				{ rollName: "Gyoza z jabłkiem (6 szt)", plateColor: "Grey", rollPrice: "20" },
+				{ rollName: "Gyoza z kaczką (6 szt)", plateColor: "Brown", rollPrice: "25" },
+				{ rollName: "Gyoza z wieprzowiną na ostro (6 szt)", plateColor: "Brown", rollPrice: "25" },
 				{ rollName: "Warzywa w tempurze", plateColor: "Red", rollPrice: "30" },
 				{ rollName: "Sałatka Krabowa", plateColor: "Orange", rollPrice: "35" },
 				{ rollName: "Kalmary w tempurze (7 szt)", plateColor: "Yellow", rollPrice: "40" },
@@ -276,40 +280,40 @@ export const dishes = {
 			imageUrl: 'logo/logofinal.png',
 			items: [
 				{
-					setNumber: "Сет 1", setName: "Сет 1", imageUrl: 'logo/logofinal.png', setPrice: "88", setQty: "22 шт", setRolls: ["Futomak Лосось", "California Сурімі", "Hosomak Ошінко"]
+					setNumber: "Сет 1", setName: "Сет 1", imageUrl: 'img/Photo/Sets/Set1.png', setPrice: "88", setQty: "22 шт", setRolls: ["Futomak Лосось", "California Сурімі", "Hosomak Ошінко"]
 				},
 				{
-					setNumber: "Сет 2", setName: "Сет 1", imageUrl: 'logo/logofinal.png', setPrice: "125", setQty: "32 шт", setRolls: ["California Креветка в темпурі", "Caterpillar Лосось з авокадо", "Volcano Сурімі Goma Wakame", "Hosomak Кампьо"]
+					setNumber: "Сет 2", setName: "Сет 1", imageUrl: 'img/Photo/Sets/Set2B.png', setPrice: "125", setQty: "32 шт", setRolls: ["California Креветка в темпурі", "Caterpillar Лосось з авокадо", "Volcano Сурімі Goma Wakame", "Hosomak Кампьо"]
 				},
 				{
-					setNumber: "Сет 3", setName: "Wege", imageUrl: 'logo/logofinal.png', setPrice: "145", setQty: "36 шт", setRolls: ["Futomak Wege", "Uramak \"Max\" Wege", "Volcano Авокадо Goma Wakame", "Sashimi roll Wege", "Hosomak Авокадо"]
+					setNumber: "Сет 3", setName: "Wege", imageUrl: 'img/Photo/Sets/Set3.png', setPrice: "145", setQty: "36 шт", setRolls: ["Futomak Wege", "Uramak \"Max\" Wege", "Volcano Авокадо Goma Wakame", "Sashimi roll Wege", "Hosomak Авокадо"]
 				},
 				{
-					setNumber: "Сет 4", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "160", setQty: "24 шт", setRolls: ["Datemak Лосось грильований на солодко", "Datemak Лосось грильований на гостро", "Uramak \"Max\" Паста з тунця", "Uramak \"Max\" Сурімі"]
+					setNumber: "Сет 4", setName: " ", imageUrl: 'img/Photo/Sets/Set4B.png', setPrice: "160", setQty: "24 шт", setRolls: ["Datemak Лосось грильований на солодко", "Datemak Лосось грильований на гостро", "Uramak \"Max\" Паста з тунця", "Uramak \"Max\" Сурімі"]
 				},
 				{
-					setNumber: "Сет 5", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "170", setQty: "32 шт", setRolls: ["Philadelphia Авокадо з лососем", "Philadelphia Огірок з копченим лососем", "Philadelphia Grill Груша з лососем", "Philadelphia Cheese Креветка в темпурі"]
+					setNumber: "Сет 5", setName: " ", imageUrl: 'img/Photo/Sets/Set5B.png', setPrice: "170", setQty: "32 шт", setRolls: ["Philadelphia Авокадо з лососем", "Philadelphia Огірок з копченим лососем", "Philadelphia Grill Груша з лососем", "Philadelphia Cheese Креветка в темпурі"]
 				},
 				{
-					setNumber: "Сет 6", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "170", setQty: "32 шт", setRolls: ["Caterpillar Креветка в темпурі з авокадо", "Caterpillar Креветка в темпурі з манго", "Philadelphia Grill Огірок з лососем", "Philadelphia Cheese Копчений лосось"]
+					setNumber: "Сет 6", setName: " ", imageUrl: 'img/Photo/Sets/Set6B.png', setPrice: "170", setQty: "32 шт", setRolls: ["Caterpillar Креветка в темпурі з авокадо", "Caterpillar Креветка в темпурі з манго", "Philadelphia Grill Огірок з лососем", "Philadelphia Cheese Копчений лосось"]
 				},
 				{
 					setNumber: "Сет 7", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "190", setQty: "36 шт", setRolls: ["Uramak \"Max\" Лосось", "Volcano Тунець Goma Wakame", "Caterpillar Креветка в темпурі з авокадо", "Datemak Крабовий салат", "Hosomak Огірок"]
 				},
 				{
-					setNumber: "Сет 8", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "200", setQty: "52 шт", setRolls: ["Philadelphia Cheese Сурімі", "Futomak Сурімі", "Uramak \"Max\" Сурімі", "California Сурімі", "Volcano Сурімі Goma Wakame", "Hosomak Огірок", "Hosomak Кампьо"]
+					setNumber: "Сет 8", setName: " ", imageUrl: 'img/Photo/Sets/Set8B.png', setPrice: "200", setQty: "52 шт", setRolls: ["Philadelphia Cheese Сурімі", "Futomak Сурімі", "Uramak \"Max\" Сурімі", "California Сурімі", "Volcano Сурімі Goma Wakame", "Hosomak Огірок", "Hosomak Кампьо"]
 				},
 				{
-					setNumber: "Сет 9", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "210", setQty: "40 шт", setRolls: ["Caterpillar Лосось з авокадо", "Caterpillar Креветка в темпурі з манго", "Philadelphia Огірок з лососем", "California Лосось грильований на гостро", "Volcano Креветка в темпурі тартар з лосося"]
+					setNumber: "Сет 9", setName: " ", imageUrl: 'img/Photo/Sets/Set9B.png', setPrice: "210", setQty: "40 шт", setRolls: ["Caterpillar Лосось з авокадо", "Caterpillar Креветка в темпурі з манго", "Philadelphia Огірок з лососем", "California Лосось грильований на гостро", "Volcano Креветка в темпурі тартар з лосося"]
 				},
 				{
-					setNumber: "Сет 10", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "220", setQty: "40 шт", setRolls: ["Futomak в темпурі Тартар з лосося", "Futomak Паста з тунця", "Datemak Лосось грильований на солодко", "Uramak \"Max\" Сурімі", "Philadelphia Cheese Лосось", "Hosomak шитаке"]
+					setNumber: "Сет 10", setName: " ", imageUrl: 'img/Photo/Sets/Set10B.png', setPrice: "220", setQty: "40 шт", setRolls: ["Futomak в темпурі Тартар з лосося", "Futomak Паста з тунця", "Datemak Лосось грильований на солодко", "Uramak \"Max\" Сурімі", "Philadelphia Cheese Лосось", "Hosomak шитаке"]
 				},
 				{
-					setNumber: "Сет 11", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "310", setQty: "60 шт", setRolls: ["Philadelphia Cheese Лосось в темпурі", "Philadelphia Огірок з лососем", "Caterpillar лосось з манго", "Caterpillar Тунець з авокадо", "California Сурімі", "Volcano Лосось Тобіко", "Futomak Овочі в темпурі", "Futomak Сурімі"]
+					setNumber: "Сет 11", setName: " ", imageUrl: 'img/Photo/Sets/Set11.png', setPrice: "310", setQty: "60 шт", setRolls: ["Philadelphia Cheese Лосось в темпурі", "Philadelphia Огірок з лососем", "Caterpillar лосось з манго", "Caterpillar Тунець з авокадо", "California Сурімі", "Volcano Лосось Тобіко", "Futomak Овочі в темпурі", "Futomak Сурімі"]
 				},
 				{
-					setNumber: "Сет 12", setName: " ", imageUrl: 'logo/logofinal.png', setPrice: "365", setQty: "58 шт", setRolls: ["Futomak Тунець \"Hashi\"", "Futomak Креветка на часниковому маслі", "Uramak \"Max\" Паста з тунця", "Philadelphia Огірок з тунцем", "Volcano Лосось Тобіко", "Sashimi roll Umami", "Hosomak Тунець", "Hosomak Авокадо"]
+					setNumber: "Сет 12", setName: " ", imageUrl: 'img/Photo/Sets/Set12B.png', setPrice: "365", setQty: "58 шт", setRolls: ["Futomak Тунець \"Hashi\"", "Futomak Креветка на часниковому маслі", "Uramak \"Max\" Паста з тунця", "Philadelphia Огірок з тунцем", "Volcano Лосось Тобіко", "Sashimi roll Umami", "Hosomak Тунець", "Hosomak Авокадо"]
 				}
 			]
 		},
@@ -529,6 +533,10 @@ export const dishes = {
 				{ rollName: "Салат Goma Wakame", plateColor: "White", rollPrice: "18" },
 				{ rollName: "Чіпси з креветок (15 шт)", plateColor: "White", rollPrice: "18" },
 				{ rollName: "Онiгірі (8 шт)", plateColor: "White", rollPrice: "18", description: "кульки рису обваляні в кунжуті (8шт)" },
+				{ rollName: "Едамаки (5 szt)", plateColor: "Grey", rollPrice: "20" },
+				{ rollName: "Гіоза з яблуком (6 szt)", plateColor: "Grey", rollPrice: "20" },
+				{ rollName: "Гіоза з качкою (6 szt)", plateColor: "Brown", rollPrice: "25" },
+				{ rollName: "Гіоза з гострою свининою (6 szt)", plateColor: "Brown", rollPrice: "25" },
 				{ rollName: "Овочі в темпурі", plateColor: "Red", rollPrice: "30" },
 				{ rollName: "Салат крабовий", plateColor: "Orange", rollPrice: "35" },
 				{ rollName: "Кальмари в темпурі (7 шт)", plateColor: "Yellow", rollPrice: "40" },

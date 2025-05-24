@@ -11,7 +11,7 @@ export const mainPageText = {
 			'Wybór sushi rollów: Różnorodne kombinacje, które zadowolą nawet najbardziej wymagających smakoszy.',
 			'Smaczne przystawki: Apetyczne przekąski, które idealnie uzupełnią Twój obiad lub kolację.',
 			'Przytulna atmosfera: Nowoczesny wystrój i przyjazny personel stworzą komfortowe środowisko dla Twojego wypoczynku.',
-			'Dostawa i odbiór osobisty: Ciesz się swoimi ulubionymi sushi rollami w domu lub odbierz je osobiście w naszej restauracji.'
+			'Dostawa i odbiór osobisty: Ciesz się swoimi ulubionymi sushi rollami w domu dzięki naszej dostawie lub odbierz je osobiście w naszej restauracji.'
 		],
 		contactsTitle: 'Kontakt',
 		contacts: [
@@ -48,7 +48,7 @@ export const mainPageText = {
 			'Вибір суші ролів: Різноманітні комбінації, які задовольнять найвибагливіших гурманів.',
 			'Смачні закуски: Апетитні закуски, які ідеально доповнять ваш обід чи вечерю.',
 			'Затишна атмосфера: Сучасний інтер\'єр і привітний персонал створять комфортне середовище для вашого відпочинку.',
-			'Доставка та самовивіз: Насолоджуйтесь улюбленими суші ролами вдома або забирайте їх особисто з нашого ресторану.'
+			'Доставка та самовивіз: Насолоджуйтесь улюбленими суші ролами вдома з нашою доставкою або ж забирайте їх особисто в нашому ресторані.'
 		],
 		contactsTitle: 'Контакти',
 		contacts: [

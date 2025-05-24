@@ -1,6 +1,7 @@
 import { dishes } from './js/modules/dishes.js';
 import { initLanguageSwitcher } from './js/modules/language.js';
 import { mainPageText } from './js/modules/mainPage.js';
+import { advertisement } from './js/modules/advertisement.js';
 
 let currentLanguage = 'pl'; // Початкове значення, наприклад, 'pl' для польської мови
 let currentDish = null; // Початкове значення
@@ -24,7 +25,9 @@ function changeLanguage(lang) {
 	});
 	currentLanguage = lang;
 	currentDish ? updateContent(currentDish) : goToMain();
-	renderCart()
+	renderCart();
+	stopAdRotation();
+	startAdRotation();
 }
 
 // Додаємо обробники подій для кнопок мови
@@ -70,7 +73,6 @@ function goToMain() {
 		// Видаляємо клас fade після оновлення контенту
 		contentDetails.classList.remove('fade');
 		// Додаємо клас visible, щоб елемент став видимим
-
 		contentDetails.classList.add('visible');
 
 		// Додаємо слухачів подій для кнопок
@@ -128,11 +130,11 @@ function updateContent(dish) {
 							${dishContent.items.map(item => `
 								<li>
 									<div class="roll_num">
-										<span>${item.setNumber ? item.setNumber + ': ' : ''}</span>
+										<span>${item.setNumber ? item.setNumber : ''}</span>
 									</div>
 									<div class="roll_text">
-										${item.setName ? item.setName : ''} ${item.setQty} - <span>${item.setPrice}</span> zł
 										${item.imageUrl ? `<img class="roll-img" src="${item.imageUrl}" alt="${item.title} image">` : ''}
+										<p>${item.setName ? item.setName : ''} ${item.setQty} - <span>${item.setPrice}</span> zł</p>
 										${item.setRolls ? `${item.setRolls.map(item => `
 										<div class="roll_text">${item}</div>
 										`
@@ -165,10 +167,10 @@ function updateContent(dish) {
 							${dishContent.items.map(item => `
 								<li>
 									<div class="roll_num">
-										<span>${item.rollNumber ? item.rollNumber + ': ' : ''}</span>
+										<span>${item.rollNumber ? item.rollNumber : ''}</span>
 									</div>
 									<div class="roll_text">
-										${item.rollName} - <span>${item.rollPrice}</span> zł <br/>
+										<p>${item.rollName} - <span>${item.rollPrice}</span> zł <br/></p>
 										${item.rollIngredients ? `(${item.rollIngredients})` : ''}
 										<div class="roll_btn">
 											<button class="decrease-quantity" data-name="${item.rollName}">-</button>
@@ -521,6 +523,48 @@ closeButton.addEventListener('click', () => {
 		cartContainer.style.display = 'none';
 		backdrop.style.display = 'none';
 	}, 300); // Час закінчення анімації
+});
+
+// add
+let currentIndex = 0;
+const adText = document.getElementById("ad-text");
+const adBox = document.getElementById("ad-box");
+const closeBtn = document.getElementById("close-btn");
+
+let intervalId;
+const changeInterval = 5000; // кожні 5 секунди
+
+function startAdRotation() {
+	const texts = advertisement[currentLanguage];
+
+	intervalId = setInterval(() => {
+		adText.style.opacity = 0;
+
+		setTimeout(() => {
+			currentIndex = (currentIndex + 1) % texts.points.length;
+			adText.textContent = texts.points[currentIndex];
+			adText.style.opacity = 1;
+		}, 1000);
+	}, changeInterval);
+}
+
+function stopAdRotation() {
+	clearInterval(intervalId);
+}
+
+// Старт
+startAdRotation();
+
+// Зупинка при наведенні
+adBox.addEventListener("mouseenter", stopAdRotation);
+adBox.addEventListener("mouseleave", startAdRotation);
+
+// Закрити рекламу
+closeBtn.addEventListener("click", () => {
+	adBox.style.opacity = 0;
+	setTimeout(() => {
+		adBox.style.display = "none";
+	}, 300);
 });
 
 // preloder
