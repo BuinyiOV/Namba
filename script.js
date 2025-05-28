@@ -538,12 +538,14 @@ function startAdRotation() {
 	const texts = advertisement[currentLanguage];
 
 	intervalId = setInterval(() => {
-		adText.style.opacity = 0;
+		adText.classList.remove('add-in');
+		adText.classList.add('add-fade');
 
 		setTimeout(() => {
 			currentIndex = (currentIndex + 1) % texts.points.length;
 			adText.textContent = texts.points[currentIndex];
-			adText.style.opacity = 1;
+			adText.classList.remove('add-fade');
+			adText.classList.add('add-in');
 		}, 1000);
 	}, changeInterval);
 }
